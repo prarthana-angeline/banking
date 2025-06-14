@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+// eslint-disable no-unused-vars //
 
 declare type SearchParamProps = {
   params: { [key: string]: string };
@@ -59,7 +59,7 @@ declare type Account = {
   type: string;
   subtype: string;
   appwriteItemId: string;
-  sharableId: string;
+  shareableId: string;
 };
 
 declare type Transaction = {
@@ -74,7 +74,6 @@ declare type Transaction = {
   category: string;
   date: string;
   image: string;
-  type: string;
   $createdAt: string;
   channel: string;
   senderBankId: string;
@@ -88,7 +87,7 @@ declare type Bank = {
   accessToken: string;
   fundingSourceUrl: string;
   userId: string;
-  sharableId: string;
+  shareableId: string;
 };
 
 declare type AccountTypes =
@@ -193,7 +192,7 @@ declare interface AuthFormProps {
 
 declare interface BankDropdownProps {
   accounts: Account[];
-  setValue?: UseFormSetValue<any>;
+  setValue?: UseFormSetValue<>;
   otherStyles?: string;
 }
 
@@ -202,7 +201,7 @@ declare interface BankTabItemProps {
   appwriteItemId?: string;
 }
 
-declare interface TotlaBalanceBoxProps {
+declare interface TotalBalanceBoxProps {
   accounts: Account[];
   totalBanks: number;
   totalCurrentBalance: number;
@@ -219,7 +218,7 @@ declare interface RightSidebarProps {
   banks: Bank[] & Account[];
 }
 
-declare interface SiderbarProps {
+declare interface SidebarProps {
   user: User;
 }
 
@@ -313,7 +312,7 @@ declare interface createBankAccountProps {
   accountId: string;
   bankId: string;
   fundingSourceUrl: string;
-  sharableId: string;
+  shareableId: string;
 }
 
 declare interface getBanksProps {

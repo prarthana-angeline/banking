@@ -4,10 +4,10 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
+  /*SheetDescription,
   SheetHeader,
-  SheetTitle,
-  SheetTrigger,
+  SheetTitle,*/
+  SheetTrigger
 } from "@/components/ui/sheet"
 import { sidebarLinks } from "@/constants"
 import { cn } from "@/lib/utils"
